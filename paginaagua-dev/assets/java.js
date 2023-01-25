@@ -168,7 +168,7 @@ function notifications() {
     .then((info) => {
       for (let i = 0; i < info.length; i++) {
         const inf = info[i]
-        if (inf.NIVEL > 80) {
+        if (inf.NIVEL > 6) {
           console.log('prueba')
           panel.appendChild(
             // notify(inf.NUMERO + '  PRESIÓN ALTA  ' + inf.NIVEL)
