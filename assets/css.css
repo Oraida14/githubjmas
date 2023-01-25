@@ -1,0 +1,122 @@
+:root {
+  --amarillo: #fbfb63;
+  --azul: #00008B;
+  --azul-link: #699dda;
+  --gris: #606078;
+  --gris-light: #b0b0b0;
+  --negro: #000000;
+  --azul-claro: #7989c3;
+  --gris-dark: #41485e;
+  --rojo: #c94444;
+  --blanco: #ffffff;
+  --verde: #98c379;
+  --bk-color: #0f1013;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+
+/* main { */
+/*     padding: 1rem 2rem 1rem 2rem; */
+/* } */
+
+header h1 {
+  display: flex;
+  color: var(--azul);
+  font-size: 1rem;
+  /* margin-left: 1rem; */
+}
+
+.info_list select {
+  width: 190px;
+}
+
+.pages-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  background-color: var(--gris-dark);
+}
+/*tamaño de la lina del menu superior azul*/
+.pages-nav__item {
+  padding: 10px;
+}
+
+.link--page:hover {
+  color: var(--azul);
+}
+
+.link {
+  font-size: 0.85em;
+  color: var(--blanco);
+  text-decoration: none;
+  position: relative;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#map {
+  /* margin: 1rem; */
+  height: 100%;
+}
+
+.showInfo {
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* INFO {{{ */
+.info {
+  display: flex;
+  overflow: auto;
+  height: 199px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 8px;
+  font: 12px/16px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+/*tamaño de linea de la etiqueta*/
+.nHr {
+  background: var(--azul);
+  height: 4px;
+}
+.nTable td {
+   vertical-align: text-middle;
+}
+
+.info h4 {
+  margin: 0 0 5px;
+  color: var(--negro);
+}
+/* }}} */
+
+/* ETIQUETA de informacion de los Iconos {{{ */
+.custom-popup .leaflet-popup-content-wrapper {
+  background: var(--azul-claro);
+  color: var(--blanco);
+  font-size: 13px;
+  line-height: 24px;
+  border-radius: 10px;
+}
+.custom-popup a.leaflet-popup-close-button {
+  color: var(--blanco);
+}
+.custom-popup .leaflet-popup-tip {
+  background: var(--azul-claro);
+}
+/* }}} */
